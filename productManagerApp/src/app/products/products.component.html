@@ -1,0 +1,11 @@
+
+<div *ngFor="let product of products.data" class="product">
+  <ul>
+    <li>Name: {{product.title}}</li>
+    <li>Price: ${{product.price}}</li>
+
+    <li><img src="{{product.imageUrl}}" width="25%"></li>
+    <button (click) = "getProduct(product._id)" [routerLink]="['edit']">Edit</button>
+    <button (click) = "delete(product._id)">Delete</button>
+  </ul>
+</div>

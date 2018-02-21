@@ -1,0 +1,11 @@
+<h1>Add a new product</h1>
+<!-- title: {{newProduct.title}}
+price: {{newProduct.price}}
+imageUrl: {{newProduct.imageUrl}} -->
+
+  <form (submit)="addProduct()">
+    name<input type="text" [(ngModel)] = "newProduct.title" name="name">
+    price<input type="text" [(ngModel)] = "newProduct.price" name="price">
+    image<input type="text" [(ngModel)] = "newProduct.imageUrl" name ="imageUrl">
+    <input type="submit" value="Add">
+  </form>

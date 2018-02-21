@@ -1,0 +1,9 @@
+<!-- {{product | json}} -->
+
+  <form (submit)="update()">
+  name<input type="text" [(ngModel)] = "product.title" name="name" value="{}">
+  price<input type="text" [(ngModel)] = "product.price" name="price">
+  image<input type="text" [(ngModel)] = "product.imageUrl" name ="imageUrl">
+  <input type="submit" value="Update">  <button [routerLink] = '["/products"]'>Cancel</button>
+
+  </form>
